@@ -1,0 +1,32 @@
+{
+  "protocol": "why-gpt-project-state/v1",
+  "revision": 1,
+  "project": "Why GPT?",
+  "purpose": "Study how large language models turn separately available constraints into integrated intelligibility.",
+  "origins": [
+    "https://github.com/TitanicParker/very-own-repo",
+    "https://github.com/TitanicParker/persistence",
+    "https://github.com/TitanicParker/The-Manifold-of-Completed-Intelligibility",
+    "https://github.com/TitanicParker/theorem-zero"
+  ],
+  "entries": [
+    {
+      "id": "seed-001",
+      "title": "Project seed",
+      "body": "Inheritance, conjunction, prompt-constructed context, and generative resolution are the current working pieces.",
+      "status": "working proposition"
+    },
+    {
+      "id": "seed-002",
+      "title": "Boundary",
+      "body": "Structure is not meaning. Intelligibility is not truth.",
+      "status": "methodological boundary"
+    },
+    {
+      "id": "seed-003",
+      "title": "Deeper question",
+      "body": "What must language be, for GPT to be possible?",
+      "status": "open question"
+    }
+  ]
+}
