@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b0d0c">
+  <title>Why GPT?</title>
+  <meta name="description" content="A living project about conjunction, inheritance, prompt-constructed fields, and the generative capacity of large language models.">
+  <style>
+    :root{--bg:#0b0d0c;--ink:#f2f4f2;--body:#c7ccc8;--muted:#818983;--line:rgba(255,255,255,.12);--accent:#91efb9;--max:780px}
+    *{box-sizing:border-box}html{background:var(--bg);color:var(--body);font-family:Georgia,'Times New Roman',serif}body{margin:0}main{width:min(calc(100% - 2rem),var(--max));margin:0 auto;padding:8vh 0 12vh}h1{font-size:clamp(3.5rem,12vw,7rem);line-height:.9;letter-spacing:-.055em;font-weight:400;color:var(--ink);margin:.3rem 0 2rem}.eyebrow,.label{font:600 .72rem/1.3 system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}p{font-size:clamp(1.1rem,2.4vw,1.35rem);line-height:1.58;margin:0 0 1.25rem}.lead{font-size:clamp(1.45rem,3.4vw,2rem);line-height:1.35;color:var(--ink)}section{padding:2.4rem 0;border-top:1px solid var(--line)}blockquote{margin:1.6rem 0;padding:0 0 0 1.2rem;border-left:2px solid var(--accent);color:var(--ink);font-size:clamp(1.25rem,3vw,1.65rem);line-height:1.45}a{color:var(--accent)}.status{font:500 .82rem/1.5 system-ui,sans-serif;color:var(--muted)}.entry{padding:1rem 0;border-top:1px solid var(--line)}.entry:first-child{border-top:0}.entry h3{margin:.15rem 0 .45rem;color:var(--ink);font-weight:500}.entry p{font-size:1rem;margin:0}.empty{color:var(--muted)}code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9em;color:var(--ink)}
+  </style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">A living associative project</p>
+  <h1>Why GPT?</h1>
+  <p class="lead">What is it about a large language model that makes it unusually capable when separately intelligible constraints must become one jointly determined whole?</p>
+
+  <section>
+    <p>This repository is not self-originating. It is downstream of work on completed intelligibility, inheritance, conjunction, generated form, and the difference between things that can be named separately and things that cannot be realized separately.</p>
+    <blockquote>The project studies what happens when distinctions become available, persist, enter a shared field, constrain one another, and generate an integrated continuation.</blockquote>
+    <p>Jyotiṣa is an early external field in which to study that operation. The project does not require belief in astrology. It asks what a fixed symbolic structure requires of an interpreter, and why GPT appears unusually suited to performing that integration.</p>
+  </section>
+
+  <section>
+    <p class="label">Origins</p>
+    <p><a href="https://github.com/TitanicParker/very-own-repo">Very Own Repo</a> teaches the distinction in ordinary language and through the experience of learning to see it.</p>
+    <p><a href="https://github.com/TitanicParker/persistence">Persistence</a> formalizes dimensional conjunction and coordinate-generated form.</p>
+    <p><a href="https://github.com/TitanicParker/The-Manifold-of-Completed-Intelligibility">The Manifold of Completed Intelligibility</a> preserves the larger question of structure already at work before explicit representation.</p>
+    <p><a href="https://github.com/TitanicParker/theorem-zero">Theorem Zero</a> remains an associated source for field, relation, and generative structure.</p>
+  </section>
+
+  <section>
+    <p class="label">Project bridge</p>
+    <p>The repository is designed to exchange state with a separate ChatGPT project through committed files. ChatGPT should read <code>PROJECT.md</code> first, then read and update <code>project.json</code> whenever the shared state changes.</p>
+    <p class="status">The page itself is static: it cannot securely write to GitHub. The bridge works because an authorized ChatGPT conversation can read and write the repository, while this page reads the committed shared state.</p>
+  </section>
+
+  <section>
+    <p class="label">Shared state</p>
+    <div id="state"><p class="empty">Loading project state…</p></div>
+  </section>
+</main>
+<script>
+(async()=>{
+  const el=document.getElementById('state');
+  try{
+    const r=await fetch('./project.json',{cache:'no-store'});
+    if(!r.ok) throw new Error('state unavailable');
+    const s=await r.json();
+    const entries=Array.isArray(s.entries)?s.entries:[];
+    const head=`<p class="status">Protocol: ${esc(s.protocol||'unknown')} · Revision: ${esc(String(s.revision??0))}</p>`;
+    if(!entries.length){el.innerHTML=head+'<p class="empty">No shared entries yet.</p>';return;}
+    el.innerHTML=head+entries.slice().reverse().map(e=>`<article class="entry"><h3>${esc(e.title||'Untitled')}</h3><p>${esc(e.body||'')}</p></article>`).join('');
+  }catch(err){el.innerHTML='<p class="empty">Shared state has not been published yet.</p>'}
+  function esc(v){return String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+})();
+</script>
+</body>
+</html>
