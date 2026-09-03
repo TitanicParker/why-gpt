@@ -1,8 +1,8 @@
 {
   "protocol": "why-gpt-project-state/v1",
-  "revision": 1,
+  "revision": 2,
   "project": "Why GPT?",
-  "purpose": "Study how large language models turn separately available constraints into integrated intelligibility.",
+  "purpose": "Study how large language models turn separately available constraints into integrated intelligibility, and how that integration can be disclosed so a reader learns to see the difference between additive inputs and centrally propagated realization.",
   "origins": [
     "https://github.com/TitanicParker/very-own-repo",
     "https://github.com/TitanicParker/persistence",
@@ -27,6 +27,24 @@
       "title": "Deeper question",
       "body": "What must language be, for GPT to be possible?",
       "status": "open question"
+    },
+    {
+      "id": "seed-004",
+      "title": "Disclosure mandate",
+      "body": "The astrology project should not merely use conjunction behind the scenes. It should disclose the difference between additive interpretation and centrally propagated realization by performing the melding in public so the reader learns to see it.",
+      "status": "governing artistic principle"
+    },
+    {
+      "id": "seed-005",
+      "title": "Provenance-bearing intelligibility",
+      "body": "Meld completely. Preserve provenance completely. The integrated result may cease to display its component meanings additively, but the system must retain where each distinction came from, which chart fact activated it, what was source-derived, what was conjunctively inferred, and what belongs to the present articulation.",
+      "status": "epistemic principle"
+    },
+    {
+      "id": "seed-006",
+      "title": "Emphaticagogical disclosure",
+      "body": "A person-facing interpretation should be staged so that the learner experiences why a chart is not a list of independent meanings. The term emphaticagogical is provisional; the mandate is to teach central propagation through the form of the disclosure itself.",
+      "status": "working artistic proposition"
     }
   ]
 }
