@@ -1,6 +1,6 @@
 {
   "protocol": "why-gpt-project-state/v1",
-  "revision": 2,
+  "revision": 3,
   "project": "Why GPT?",
   "purpose": "Study how large language models turn separately available constraints into integrated intelligibility, and how that integration can be disclosed so a reader learns to see the difference between additive inputs and centrally propagated realization.",
   "origins": [
@@ -45,6 +45,17 @@
       "title": "Emphaticagogical disclosure",
       "body": "A person-facing interpretation should be staged so that the learner experiences why a chart is not a list of independent meanings. The term emphaticagogical is provisional; the mandate is to teach central propagation through the form of the disclosure itself.",
       "status": "working artistic proposition"
+    },
+    {
+      "id": "seed-007",
+      "title": "Founding native as experimental condition",
+      "body": "The first Jyotisa native is not merely the subject of the first interpretive case. The native, chart, inherited Jyotisa grammar, prompt, GPT, provenance record, and human response together form an experimental field. The founding native can also serve as the first site of the project's native explanatory form: a disclosure in which the reader experiences separately intelligible chart factors becoming mutually consequential until one person-level realization emerges. The aim is methodological rather than flattering or person-exceptionalist; the resulting method should later survive other natives, other domains, and eventually synthetic grammars not present in model training.",
+      "status": "working methodological proposition",
+      "provenance": {
+        "source": "FOUNDING_NATIVE.md",
+        "formation": "Conversation-level conjunction of the existing disclosure mandate, provenance principle, Jyotisa test field, and the recognition that the human native can evaluate the visibility and accountability of integration.",
+        "reopen_if": "The founding case fails to distinguish conjunctive output from a competent additive control, or the proposed method does not transfer beyond the founding native."
+      }
     }
   ]
 }
